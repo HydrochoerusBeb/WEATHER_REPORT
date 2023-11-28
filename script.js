@@ -14,23 +14,25 @@ class ВиджетПогоды extends HTMLElement {
 <style>
                 :host {
                     display: block;
-                    --цвет-фона-виджета: #ff6666;
-                    --цвет-текста-виджета: #000;
-                    --размер-шрифта-виджета: 16px;
+                    --bgc: purple;
+                    --clrText: #000;
+                    --txtSize: 16px;
                 }
  
                 #инфо-погоды {
-                    background-color: var(--цвет-фона-виджета);
-                    color: var(--цвет-текста-виджета);
-                    font-size: var(--размер-шрифта-виджета);
+                    background-color: var(--bgc);
+                    color: var(--clrText);
+                    font-size: var(--txtSize);
                     padding: 20px;
                     border-radius: 10px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\
+                    font-family: sans-serif;
                 }
  
                 #инфо-погоды h1 {
                     color: #470a0a;
                 }
+                
 </style>
 <div id="инфо-погоды">
 <h1>Информация о погоде</h1>
